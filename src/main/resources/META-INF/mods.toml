@@ -27,7 +27,7 @@ displayName="Axiomatic Teleportation" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="https://github.com/gamma-delta/axiomatic_teleportation/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="examplemod.png" #optional
+logoFile="labcoat_item-export.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to Direwolf20 for inspiring this mod, and Axiom Verge for the idea of the labcoat." #optional
 # A text field displayed in the mod UI

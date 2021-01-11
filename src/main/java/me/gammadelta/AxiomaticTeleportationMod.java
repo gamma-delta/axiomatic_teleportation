@@ -3,6 +3,7 @@ package me.gammadelta;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.network.NetworkRegistry;
@@ -19,6 +20,7 @@ public class AxiomaticTeleportationMod {
 
     // Register stuff here; we have few enough things to register we can do it inline.
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
+    public static final RegistryObject<Item> LABCOAT = ITEMS.register("labcoat", LabcoatItem::new);
 
     public AxiomaticTeleportationMod() {
         instance = this;
@@ -29,7 +31,6 @@ public class AxiomaticTeleportationMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ITEMS.register("labcoat", LabcoatItem::new);
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 

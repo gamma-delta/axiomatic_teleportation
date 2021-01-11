@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "OCO",
+    "PRP"
+  ],
+  "key": {
+    "O": {
+      "tag": "forge:ender_pearls"
+    },
+    "C": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "D": {
+      "tag": "forge:gems/diamond"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "result": {
+    "item": "axiomatic_teleportation:labcoat"
+  }
+}

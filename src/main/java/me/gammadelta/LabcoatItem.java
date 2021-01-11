@@ -150,7 +150,7 @@ public class LabcoatItem extends ArmorItem {
 
         @Override
         public float getKnockbackResistance() {
-            return 0.5f;
+            return 0.05f;
         }
     }
 }

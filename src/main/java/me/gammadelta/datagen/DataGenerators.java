@@ -15,5 +15,8 @@ public class DataGenerators {
         if (ev.includeClient()) {
             gen.addProvider(new ItemModels(gen, efh));
         }
+        if (ev.includeServer()) {
+            gen.addProvider(new Recipes(gen));
+        }
     }
 }
