@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "axiomatic_teleportation:labcoat_item"
+  }
+}

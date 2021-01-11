@@ -18,7 +18,6 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
 public class LabcoatItem extends ArmorItem {
@@ -81,12 +80,12 @@ public class LabcoatItem extends ArmorItem {
             Vector3d middle = oldPos.add(0, 1, 0).add(projectedPos.add(0, 1, 0)).scale(0.5);
             Vector3d spread = oldPos.subtract(projectedPos).normalize();
             // Get even farther than the destination so the player gets extra particles at their head to look at
-            Vector3d projectedFarther = player.getEyePosition(0f).add(player.getLookVec().scale(blocksToMove + 0.5));
+            Vector3d projectedFarther = player.getEyePosition(0f).add(player.getLookVec().scale(blocksToMove + 0.7));
 
             float speedMod = 0.5f;
             float spreadMod = 2.0f;
 
-            for (int i = 0; i < 300; i++) {
+            for (int i = 0; i < 100; i++) {
                 world.addParticle(new RedstoneParticleData(0.2f, 0.9f, 0.5f, 1.0f),
                         middle.x + (world.rand.nextDouble() - 0.5) * (spread.x + 0.5) * spreadMod,
                         middle.y + (world.rand.nextDouble() - 0.5) * (spread.y + 1) * spreadMod,
